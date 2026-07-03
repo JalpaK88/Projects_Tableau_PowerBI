@@ -1,12 +1,15 @@
 REPOSITORY STRUCTURE
 =====================
 
+```
 Projects_Tableau/
 ├── Tableau_Project_1.zip
 └── Tableau_Project_2.zip
+└── README.md
+```
 
 =====================================================
-TABLEAU_PROJECT_1/README.md
+TABLEAU_PROJECT_1/
 =====================================================
 
 # Video Game Global Sales Analysis 🎮
@@ -80,7 +83,7 @@ Tableau_Project_1/
 
 
 =====================================================
-TABLEAU_PROJECT_2/README.md
+TABLEAU_PROJECT_2/
 =====================================================
 
 # Airbnb Pricing & Revenue Analysis (Seattle) 🏠

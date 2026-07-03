@@ -8,9 +8,8 @@ Projects_Tableau/
 └── README.md
 ```
 
-=====================================================
-TABLEAU_PROJECT_1/
-=====================================================
+1. TABLEAU_PROJECT_1/
+
 
 # Video Game Global Sales Analysis 🎮
 
@@ -82,9 +81,8 @@ Tableau_Project_1/
 ```
 
 
-=====================================================
-TABLEAU_PROJECT_2/
-=====================================================
+2. TABLEAU_PROJECT_2/
+
 
 # Airbnb Pricing & Revenue Analysis (Seattle) 🏠
 

@@ -8,10 +8,7 @@ Projects_Tableau/
 └── README.md
 ```
 
-1. TABLEAU_PROJECT_1/
-
-
-# Video Game Global Sales Analysis 🎮
+# 1. TABLEAU_PROJECT_1: Video Game Global Sales Analysis 🎮
 
 An interactive Tableau project exploring global video game sales data — analyzing trends across genres, platforms, regions, and time to uncover which factors drove commercial success in the gaming industry from the 1980s through the mid-2010s.
 
@@ -81,10 +78,7 @@ Tableau_Project_1/
 ```
 
 
-2. TABLEAU_PROJECT_2/
-
-
-# Airbnb Pricing & Revenue Analysis (Seattle) 🏠
+# 2. TABLEAU_PROJECT_2: Airbnb Pricing & Revenue Analysis (Seattle) 🏠
 
 A Tableau project analyzing Seattle Airbnb listing data to understand how pricing varies by property size and location, and how host revenue has trended over time.
 

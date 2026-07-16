@@ -5,6 +5,8 @@ REPOSITORY STRUCTURE
 Projects_Tableau/
 ├── Tableau_Project_1.zip
 └── Tableau_Project_2.zip
+└── PowerBI_Project_1: PowerBI_Project_Hospital_Readmissions_Operations_Dashboard.pbix, PowerBI_Project_Hospital_Readmission_Operations_Dashboard.pdf
+└── PowerBI_Project_2: PowerBI_Project_Data_Professional_Survey.pbix, PowerBI_Project_Data_Professional_Survey.pdf
 └── README.md
 ```
 
@@ -130,6 +132,127 @@ Tableau_Project_2/
     └── Airbnb_Revenue_year_line.png
 ```
 
+# 3. POWERBI_PROJECT 1: Hospital Readmission & Operation Dashboard 🏥
+
+An end-to-end Power BI project analyzing readmission performance and emergency department 
+timeliness across 3,000+ Medicare-registered hospitals, built entirely from real, public 
+CMS government data (not a pre-cleaned Kaggle dataset).
+
+## 📊 Project Overview
+
+This project explores CMS Hospital Compare data to answer:
+
+- Which hospitals show higher-than-expected 30-day readmission rates?
+- How much does readmission performance vary hospital-by-hospital vs. state-by-state?
+- Is there a relationship between how fast a hospital's ED moves and its readmission outcomes?
+- Where should hospital operations leadership prioritize improvement efforts?
+
+## 🔍 Key Insights
+
+- **Readmission risk is a hospital-level problem, not a regional one.** State-level averages 
+  cluster tightly between 1.01–1.03, while individual hospitals range as high as 1.31 and 
+  as low as 0.85 — a much wider spread than geography alone would suggest.
+- **ED wait times don't predict readmission rates.** A benchmark comparison across hospitals 
+  found no consistent relationship between emergency department speed and readmission 
+  performance, suggesting these are two independent operational challenges requiring 
+  separate improvement strategies.
+
+## 📈 Visualizations
+
+| Visualization | Type | Description |
+| -------------- | ---- | ----------- |
+| `KPI_Summary_Cards` | Card | Total hospitals, national avg readmission ratio, avg ED wait time |
+| `Readmission_Ratio_by_State` | Filled map | US states shaded by average excess readmission ratio |
+| `Top10_States_Readmission_Bar` | Bar chart | Worst-performing states by readmission ratio |
+| `Hospital_Drilldown_Table` | Table | Facility-level ratio, variance, and rank, conditionally formatted |
+| `Top10_Hospitals_Variance_Bar` | Bar chart | Worst-performing individual hospitals |
+| `EDWaitTime_vs_Readmission_Scatter` | Scatter chart | Benchmark comparison across all hospitals |
+
+## 🖥️ Dashboard Pages
+
+- **Executive Overview** — KPI cards, US map, top 10 worst states, and a key-finding callout
+- **Hospital Drill-down** — filterable (State, Measure) table ranked and color-coded by 
+  readmission variance, paired with a worst-performers bar chart
+- **Benchmark Comparison** — scatter plot testing ED wait time against readmission ratio
+
+## 🗂️ Data Sources
+
+All data sourced directly from [data.cms.gov](https://data.cms.gov):
+- Hospital General Information
+- Hospital Readmissions Reduction Program (HRRP)
+- Timely and Effective Care - Hospital
+
+## 🛠️ Tools Used
+
+- **Power BI Desktop** — data modeling, DAX, dashboard design
+- **Power Query (M)** — data cleaning and transformation
+- **DAX** — RANKX, CALCULATE, ALLEXCEPT for benchmark and ranking measures
+
+## 📁 Folder Structure
+
+```
+Project_Tableau_PowerBI/
+├── Hospital_Readmissions_Operations_Dashboard.pbix
+└── PowerBI_Project_Hospital_Readmission_Operations_Dashboard.pdf
+```
+
+# 4. POWERBI_PROJECT 2: Data Professional Survey Analysis 📋
+
+An interactive Power BI dashboard analyzing a real survey of ~630 data professionals, exploring salary, role, tools, and career trends across 
+the data industry.
+
+## 📊 Project Overview
+
+This project explores survey responses from working data professionals to answer:
+
+- How does average salary vary by role (Data Analyst, Data Scientist, Data Engineer, etc.)?
+- Which countries report the highest and lowest average salaries?
+- What programming languages and tools do data professionals prefer?
+- What level of education is typical for breaking into the data field?
+- How satisfied are respondents with their current roles, and how many have switched 
+  careers into data?
+
+## 🔍 Key Insights
+
+- Data Scientists report the highest average salary among data roles, followed by 
+  Data Engineers and Data Architects — with Data Analysts earning notably less.
+- Salary varies significantly by country, with cost of living playing a clear role — 
+  a high number doesn't always mean better relative pay.
+- A graduate degree isn't a strict requirement to enter the field — many respondents 
+  broke in with a Bachelor's degree.
+- A majority of respondents report having switched careers into data from a different field.
+
+## 📈 Visualizations
+
+
+| Visualization | Type | Description |
+| -------------- | ---- | ----------- |
+| `Avg_Salary_by_Role_Bar` | Bar chart | Average salary broken down by job title |
+| `Avg_Salary_by_Country_Map` | Filled map | Average salary by respondent country |
+| `Favorite_Language_Donut` | Donut/Pie chart | Most preferred programming language |
+| `Education_Level_Bar` | Bar chart | Highest education level among respondents |
+| `Career_Switcher_KPI` | Card | % of respondents who switched careers into data |
+| `Job_Satisfaction_Table` | Table/Matrix | Satisfaction levels by role |
+
+## 🖥️ Dashboard
+
+**Data Professional Survey Dashboard** — a single-page interactive view combining salary, 
+role, tools, education, and satisfaction insights with slicers for role and country.
+
+## 🛠️ Tools Used
+
+- **Power BI Desktop** — dashboard design and DAX
+- **Power Query (M)** — data cleaning (standardizing salary ranges, consolidating 
+  low-frequency job titles into "Other," removing empty tracking columns)
+
+## 📁 Folder Structure
+
+```
+PowerBI_Project_Data_Professional_Survey/
+├── PowerBI_Project_Data_Professional_Survey.pbix
+├── PowerBI_Project_Data_Professional_Survey.pdf
+└── Power BI - Final Project.xlsx
+```
 ## 🔗 Connect
 
 Feel free to explore the visuals above or reach out with questions/feedback!
